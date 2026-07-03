@@ -1,4 +1,3 @@
-Учебный проект "Закрывающий тег"
-https://github.com/wiksloba-lang/zakrivayuschiy-teg-f
-https://wiksloba-lang.github.io/zakrivayuschiy-teg-f/
-
+Учебный проект "Закрывающий тег" 
+ссылка на  проект https://github.com/wiksloba-lang/zakrivayuschiy-teg-f 
+ссылка на опубликованный сайт https://wiksloba-lang.github.io/zakrivayuschiy-teg-f/
