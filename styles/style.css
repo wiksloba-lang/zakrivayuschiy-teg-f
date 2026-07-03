@@ -31,7 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-block: 100px;
+  margin-block: 98px;
   min-block-size: clamp(327px, 25.6vw, 368px);
   background-color: var(--background-color);
   border: var(--border-width) solid var(--border-color);
@@ -119,7 +119,7 @@
 }
 
 .card__image_filter-blur {
-  filter: blur(15px);
+  filter: blur(7px);
 }
 
 .card__image_filter-hue-blur {
