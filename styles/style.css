@@ -31,7 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-block: 98px;
+  margin-block: 100px;
   min-block-size: clamp(327px, 25.6vw, 368px);
   background-color: var(--background-color);
   border: var(--border-width) solid var(--border-color);
@@ -43,6 +43,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  justify-content: space-between;
 }
 
 .header__logo {
@@ -50,15 +51,17 @@
   font-size: clamp(49px, 5vw, 65px);
   line-height: 1;
   text-transform: uppercase;
-  white-space: nowrap;
-}
+  overflow-wrap: break-word;
+    /* white-space: nowrap;*/
+  }
 
 .header__title {
   font-family: var(--accent-font);
   font-size: clamp(14px, 2vw, 23px);
-  line-height: 1;
+   /*line-height: 1;*/
   text-transform: uppercase;
-  white-space: nowrap;
+  overflow-wrap: break-word;
+   /* white-space: nowrap;*/
 }
 
 .card-list {
@@ -67,6 +70,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  justify-content: space-between;
 }
 
 .card__article {
@@ -153,7 +157,7 @@
   display: grid;
   gap: 25px;
   padding: 25px;
-}
+  }
 
 .card__text {
   margin: 0;
@@ -225,7 +229,8 @@
   block-size: 38px;
   cursor: pointer;
   transition: border-color 0.3s ease;
-}
+  justify-content: flex-end; /* Прижимает к нижнему краю */
+  }
 
 .card__icon-button:focus {
   outline: none;
@@ -325,15 +330,22 @@
   mix-blend-mode: difference;
 }
 
-.dialog {
+/* .dialog {
   inline-size: min(353px, calc(100vw - 34px));
   max-inline-size: none;
   margin: auto;
   padding: 30px;
   border: var(--border-width) solid var(--border-color);
   background-color: var(--background-color);
+}*/
+.dialog[open] {
+   inline-size: min(353px, calc(100vw - 34px));
+  max-inline-size: none;
+  margin: auto;
+  padding: 30px;
+  border: var(--border-width) solid var(--border-color);
+ /*  background-color: var(--background-color);*/
 }
-
 .dialog__content {
   display: flex;
   align-items: center;
@@ -360,7 +372,7 @@
 }
 
 .dialog::backdrop {
-  background-color: var(--backdrop-color);
+  /*  background-color: var(--background-color);*/
 }
 
 @media (width <= 375px) {
