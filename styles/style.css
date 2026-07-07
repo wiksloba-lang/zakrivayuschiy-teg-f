@@ -86,7 +86,7 @@
   font-variation-settings: "wght" var(--title-font-weight);
   line-height: normal;
 }
-.card__title_section{
+.card__title_section {
   margin: 0;
   padding: 5px 10px;
   font-family: var(--main-font);
@@ -234,7 +234,6 @@
   block-size: 38px;
   cursor: pointer;
   transition: border-color 0.3s ease;
-  justify-content: flex-end; /* Прижимает к нижнему краю */
   }
 
 .card__icon-button:focus {
